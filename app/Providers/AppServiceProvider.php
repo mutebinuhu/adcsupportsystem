@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+//this line below should be added in the latest laravel
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,6 +16,8 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
+          //this string should be added in laravel 5++ and the facade
+        Schema::defaultStringLength(191);
     }
 
     /**
