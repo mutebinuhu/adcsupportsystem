@@ -178,7 +178,7 @@
             }
            
             .header-fluid{
-                background-image: url(https://cdn.pixabay.com/photo/2018/03/09/08/36/businessman-3210932_960_720.jpg);
+                background-image: url('https://cdn.pixabay.com/photo/2018/03/09/08/36/businessman-3210932_960_720.jpg');
                 background-size: cover;
                 background-repeat: none;
                 background-position: center;
@@ -282,7 +282,7 @@
                 <div class="row">
                 <div class="col-md-4 create-ticket-box">
                    <div class="text-center">
-                   <img src="../public/images/Ticket-icon.png" height="100px" width="100px">
+                   <img src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/128/ticket-icon.png" height="100px" width="100px">
                    <h3>Create Ticket</h3>
                    </div>
                         <p>Through This System You Can Send a Ticket To Adc And we assure You That we are going To Reach You As soon as possible</p>
@@ -292,7 +292,7 @@
 
                 <div class="col-md-4 edit-ticket-box">
                    <div class="text-center">  
-                   <img src="../public/images/editticket.png" height="100px" width="100px">
+                   <img src="https://cdn1.iconfinder.com/data/icons/symbol-color-vacation-1/32/ticket-edit-512.png" height="100px" width="100px">
                     <h3>Edit Ticket</h3>
                    </div>
                     <p>
@@ -304,7 +304,7 @@
                 </div>
                  <div class="col-md-4 close-ticket-box">
                    <div class="text-center">
-                   <img src="../public/images/remove-ticket-icon.png" height="100px" width="100px">
+                   <img src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-4/256/Ticket-add-icon.png" height="100px" width="100px">
                     <h3>Close Ticket</h3>
                    </div>
                    <p>Has Your Problem been solved, if Thats Ok Boss You can close the ticket.....please Dont Forget To rate Us....thanks</p>
