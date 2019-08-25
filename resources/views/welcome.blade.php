@@ -178,7 +178,7 @@
             }
            
             .header-fluid{
-                background-image: url(../public/images/tech2.jpg);
+                background-image: url(https://cdn.pixabay.com/photo/2018/03/09/08/36/businessman-3210932_960_720.jpg);
                 background-size: cover;
                 background-repeat: none;
                 background-position: center;
