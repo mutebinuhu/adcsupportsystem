@@ -36,4 +36,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    public function tickets()
+    {
+        return $this->hasMany(ticket::class);
+    }
+    public function Reports()
+    {
+
+        return $this->hasMany(Fieldreport::class);
+    }
 }

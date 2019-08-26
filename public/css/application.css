@@ -1,0 +1,182 @@
+
+body{
+	   background-color: #19273d;
+}
+.card-heads{
+	text-align: center;
+	color: #fff;
+	background-color: rgb(100, 100, 200);
+	background-image: url('../images/tech.jpg');
+	background-size: cover;
+	background-position: center;
+	
+}
+.col-md-4{
+	display: flex;
+}
+.home-image{
+	display: none;
+	border-radius: 50%;
+
+
+
+}
+.btn-info{
+	color: white;
+	background-color: rgb(100, 100, 200);
+}
+ .home-query-box{
+ 	background-image: url('../images/tech4.jpg');
+	background-size: cover;
+	background-position: center;
+
+ }
+ .plus-icon{
+ 	float: right;
+ }
+ .plus-icon1{
+ 	float: right;
+
+ }
+.bank-list{
+	display: none;
+}
+.latest-activities{
+	display: none;
+}
+
+.ticket-index-card{
+		display: none;
+}
+.adc-header{
+	background-image: url('../images/tech5.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #ccdcde;
+	text-shadow: 2px 2px #19273d;
+	transition: all 3s ease-in-out;
+	height: 250px;
+}
+.adc-welcome-text{
+	display: none;
+}
+.adc-welcome-button{
+	position: relative;
+	margin-top: 200px;
+
+}
+.ticket-no{
+	display: none;
+	position: relative;
+}
+.results{
+	display: none;
+	position: relative;
+}
+.status{
+	position: relative;
+	width: 200px;
+
+}
+.status-finished{
+	display: none;
+}
+.header-fluid{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,3,30,1) 35%, rgba(0,212,255,1) 100%);
+background-size: cover;
+background-repeat: none;
+background-position: center;
+height: 200px;
+display: flex;
+align-content: center;
+justify-content: center;
+
+}
+.send-ticket-modal{
+
+}
+.ticket-index-page{
+	
+}
+.notification{
+	width: 20px;
+	height: 200px;
+	background-color: red;
+}
+.why-not-solved{
+	display: none;
+	
+}
+.adc-field-data{
+	display: none;
+}
+.plus-icon{
+	position: relative;
+}
+.side-nav{
+	height: calc(100vh);
+	background-color: #fff;
+	width: 10px;
+	color: #111;
+}
+.bank-status{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.no-of-tickets{
+	
+}
+.admin-image{
+	height: 100px;
+	width: 100px;
+	background-image: url('../images/adminimage.jpg');
+	background-repeat: none;
+	background-size: cover;
+	background-position: center;
+	background-color: red;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	border-radius: 50%;
+
+}
+.admin-nav{
+	color: #01dad7;
+	border-left: 2px solid #01dad7;
+	padding: 0 3px;
+	border-right: 2px solid #01dad7;
+	display: none;
+	transition: all 0.3s ease-in-out;
+
+}
+.admin-profile-pic{
+	height: 29px;
+	width: 50px;
+	background-color: red;
+}
+.admin-header{
+	color: #01dad7;
+	letter-spacing: 2px;
+	padding: 5px 0;
+	border-bottom: 5px solid white;
+
+}
+.admin-pending, .admin-closed, .admin-reports, .bank-tickets{
+	display: none;
+}
+.admin-pending a,  .admin-closed a {
+	color: #01dad7;
+	text-decoration: none;
+}
+
+.ticket-nav{
+	color: white;
+	border-left: 2px solid #01dad7;
+	padding: 0 3px;
+	border-right: 2px solid #01dad7;
+	display: none;
+	transition: all 0.3s ease-in-out;
+
+}
