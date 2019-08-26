@@ -131,11 +131,11 @@ justify-content: center;
 .admin-image{
 	height: 100px;
 	width: 100px;
-	background-image: url('../images/adminimage.jpg');
+	background-image: url('http://www.gravatar.com/avatar/fc4ad839ad17d146f6239100c1baaeaf?s=80&d=mm&r=g');
 	background-repeat: none;
 	background-size: cover;
 	background-position: center;
-	background-color: red;
+	background-color: #f2f2f2;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
