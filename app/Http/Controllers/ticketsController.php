@@ -74,7 +74,7 @@ class ticketsController extends Controller
 
    
        //sending email functionality
-    $to_name = 'Africa distribution Company';
+   /* $to_name = 'Africa distribution Company';
     $to_email = array('mutebinuhu1@gmail.com', 'mutebinuhu@gmail.com');
     $data = array('name'=>Auth::User()->organisation, "body" =>$request->get('description'). 'the problem occured on '.  $request->get('date').  ' '. $request->get('location') . ' branch' );
     $template= 'emails.collecteddataemail';
@@ -83,9 +83,14 @@ class ticketsController extends Controller
                 ->subject('Ticket');
         $message->from(Auth::User()->email, Auth::User()->organisation);
     });
+    */
+     $data = ['message' => 'This is a test!'];
+
+      Mail::to('mutebinuhu1@gmail.com')->send(new TestEmail($data));
     
      ticket::create($formData);
-    	return redirect('/tickets')->with('status', 'Ticket sent successfuly');
+    	
+      return redirect('/tickets')->with('status', 'Ticket sent successfuly');
 
 
     }
