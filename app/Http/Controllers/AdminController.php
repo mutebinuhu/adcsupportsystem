@@ -5,7 +5,9 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\ticket;
 use App\Report;
+use App\User;
 use Illuminate\Pagination\Paginator;
+
 
 class AdminController extends Controller
 {
@@ -75,5 +77,14 @@ class AdminController extends Controller
         $ticket = ticket::whereUrl($url)->firstOrFail();
         return view('Admin.show')
                     ->withticket($ticket);
+    }
+
+    public function showUsers()
+    {
+        $users = DB::table('users')
+                    ->OrderBy('id', 'desc')
+                    ->get();
+        return view('Admin.users')
+                    ->withusers($users);
     }
 }

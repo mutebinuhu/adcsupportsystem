@@ -11,6 +11,8 @@
 					<h3 class="admin-pending"><a href="#pending-tickets">Pending </a><sup><span class="badge badge-danger">{{ $countAllPendingTickets}}</span></sup></h3>
 					<h3 class="admin-closed"><a href="#admin-closed">Closed </a><sup><span class="badge badge-success">{{$countAllclosedTickets}}</span></sup></h3>
 					<h3 class="admin-reports">Field Reports <sup><span class="badge badge-danger">{{$countReports}}</span></sup></h3>
+					<h3 class="admin-reports"><a href="{{ url('/users')}}">users</a><sup><span class="badge badge-danger">{{$countReports}}</span></sup></h3>
+
 
 				</div>
 			<!--end of admin-nav-->
