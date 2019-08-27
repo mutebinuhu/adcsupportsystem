@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\ticket;
 use App\Branchvisit;
+ use App\Mail\TestMail;
 
 
 class ticketsController extends Controller
@@ -84,13 +85,13 @@ class ticketsController extends Controller
         $message->from(Auth::User()->email, Auth::User()->organisation);
     });
     */
-     $data = ['message' => 'This is a test!'];
+    
 
-      Mail::to('mutebinuhu1@gmail.com')->send(new TestEmail($data));
     
      ticket::create($formData);
     	
       return redirect('/tickets')->with('status', 'Ticket sent successfuly');
+
 
 
     }
