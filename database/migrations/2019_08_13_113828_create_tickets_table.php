@@ -16,7 +16,6 @@ class CreateTicketsTable extends Migration
         Schema::create('tickets', function (Blueprint $table) {
            $table->bigIncrements('id');
             $table->unsignedInteger('user_id')->nullable();
-            $table->string('organisation', '100');
             $table->string('client', '100');
             $table->string('location', '100');
             $table->string('description', '3000');
@@ -24,7 +23,6 @@ class CreateTicketsTable extends Migration
             $table->string('url')->nullable();
             $table->tinyInteger('status')->default(1);
             $table->timestamps();
-
         });
     }
 
