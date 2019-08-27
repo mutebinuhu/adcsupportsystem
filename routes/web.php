@@ -46,3 +46,5 @@ Route::get('/visit', 'BranchVisitsController@store');
 
 //admin Routes
 Route::get('/admin', 'AdminController@index');
+Route::get('/admin/{url}', 'AdminController@show');
+

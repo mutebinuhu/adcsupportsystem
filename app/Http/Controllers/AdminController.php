@@ -69,4 +69,11 @@ class AdminController extends Controller
 
 
     }
+     public function show($url)
+    {
+
+        $ticket = ticket::whereUrl($url)->firstOrFail();
+        return view('Admin.show')
+                    ->withticket($ticket);
+    }
 }

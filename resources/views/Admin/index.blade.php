@@ -35,7 +35,7 @@
 						<tbody>
 						@foreach($tickets as $ticket)	
 						<tr>
-							<td>{{$ticket->id}}</td>
+							<td><a href="{{action('AdminController@show', $ticket->url)}}">{{$ticket->id}}</a></td>
 							<td>{{$ticket->title}}</td>
 							<td>{{$ticket->client}}</td>
 							<td>{{$ticket->location}}</td>
