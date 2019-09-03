@@ -48,4 +48,5 @@ Route::get('/visit', 'BranchVisitsController@store');
 Route::get('/admin', 'AdminController@index');
 Route::get('/admin/{url}', 'AdminController@show');
 Route::get('/users', 'AdminController@showUsers');
-
+//end of admin Routes
+Route::get('/stanbicbank', 'StanbicBankController@index');

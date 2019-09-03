@@ -58,7 +58,7 @@ class fieldDataController extends Controller
 		'notsolved'=>$request->notsolved
     	);
 
-    $to_name = 'Africa distribution Company';
+   /* $to_name = 'Africa distribution Company';
     $to_email = array('mutebinuhu1@gmail.com', 'mutebinuhu@gmail.com');
     $data = array('name'=>Auth::User()->name, "body" =>$request->get('workdone') );
     $template= 'emails.collecteddataemail';
@@ -67,7 +67,7 @@ class fieldDataController extends Controller
                 ->subject('Bank Report' );
         $message->from(Auth::User()->email, Auth::User()->name);
     });
-    	
+    */
   
     	Fieldreport::create($formdata);
     	return redirect ('/adc')->with('status', 'data successfuly saved');

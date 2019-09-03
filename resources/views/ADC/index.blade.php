@@ -16,7 +16,6 @@
             <div class="text-center"><h1 class="adc-welcome-text">Welcome  {{Auth::User()->name}}</h1></div>
             <div class="text-center my-5">
             <button data-toggle="modal" data-target="#myModal" class="btn btn-danger adc-welcome-button" >Report</button>
-            <a href="#"   class="btn btn-danger adc-welcome-button" >Visit</a>
             </div>
           </div>
           @foreach($errors->all() as $error)
