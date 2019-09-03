@@ -2,6 +2,11 @@
 body{
 	   background-color: #19273d;
 }
+@media only screen and (max-width: 600px) {
+ .dontshow{
+ 	display: none;
+ }
+}
 .card-heads{
 	text-align: center;
 	color: #fff;
