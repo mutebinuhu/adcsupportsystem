@@ -47,7 +47,7 @@
           <h3 class="admin-closed"><a href="#admin-closed">Closed </a><sup><span class="badge badge-success">{{count($pendingTickets)}}</span></sup></h4>
           <a  href='' title="click this button to send a ticket to  ADC" class="btn btn-primary my-2" data-toggle="modal" data-target="#myModal">Send Ticket</a>
           <a  href='' title="click this button to confirm a visit to {{Auth::User()->organisation}}" class="btn btn-primary my-2" data-toggle="modal" data-target="#branchvisitModal">confirm A visit</a>
-           <a  href="{{url('/admin')}}" class="btn btn-primary my-2">Stanbic Admin</a>
+           <a  href="{{url('/stanbicbank')}}" class="btn btn-primary my-2">Stanbic Admin</a>
 
         </div>
       <!--end of admin-nav-->

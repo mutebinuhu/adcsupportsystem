@@ -16,12 +16,12 @@
 								<p>{{$ticket->id}}</p>
 							</div>
 							<div class="col-md-3">
-								<p>BANK: </p>
+							<p><strong>BANK:</strong></p>
 							</div>
 							<div class="col-md-9">
 								<p>{{$ticket->client}}</p>
 							</div><div class="col-md-3">
-								<p>BRANCH : </p>
+								<p><strong>BRANCH :</strong> </p>
 							</div>
 							<div class="col-md-9">
 								<p>{{$ticket->location}}</p>

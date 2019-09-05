@@ -11,7 +11,7 @@
 					<h3 class="admin-pending"><a href="#pending-tickets">Pending </a><sup><span class="badge badge-danger">{{ $countAllPendingTickets}}</span></sup></h3>
 					<h3 class="admin-closed"><a href="#admin-closed">Closed </a><sup><span class="badge badge-success">{{$countAllclosedTickets}}</span></sup></h3>
 					<h3 class="admin-reports">Field Reports <sup><span class="badge badge-danger">{{$countReports}}</span></sup></h3>
-					<h3 class="admin-reports"><a href="{{ url('/users')}}">users</a><sup><span class="badge badge-danger">{{$countReports}}</span></sup></h3>
+					<h3 class="admin-reports"><a href="{{ url('/users')}}">users</a><sup><span class="badge badge-danger"></span></sup></h3>
 
 
 				</div>
@@ -25,13 +25,13 @@
 						@if($tickets->isEmpty())
 							<h3 class="text-danger">No Tickets Yet</h3>
 						@endif
-						<table class="table table-striped">
+						<table class="table table-striped border">
 						<thead>
 							<tr>
 								<td>id</td>
 								<td>Title</td>
-								<td>Bank Name</td>
-								<td>Bank Branch</td>
+								<td>Bank</td>
+								
 							</tr>
 						</thead>
 						<tbody>
@@ -40,7 +40,6 @@
 							<td><a href="{{action('AdminController@show', $ticket->url)}}">{{$ticket->id}}</a></td>
 							<td>{{$ticket->title}}</td>
 							<td>{{$ticket->client}}</td>
-							<td>{{$ticket->location}}</td>
 						</tr>
 						@endforeach
 						</tbody>
@@ -52,13 +51,13 @@
 				<div class="card my-5 pending-tickets" id="pending-tickets">
 					<div class="card-header text-center">Pending Tickets</div>
 					<div class="card-body">
-					<table class="table table-striped">
+					<table class="table table-striped border">
 						<thead>
 							<tr>
 								<td>id</td>
 								<td> Title</td>
-								<td>Bank Name</td>
-								<td>Branch Name</td>
+								<td>Bank</td>
+								
 							</tr>
 						</thead>	
 							<tbody>
@@ -67,7 +66,7 @@
 									<td>{{$pendingTicket->id}}</td>
 									<td>{{$pendingTicket->title}}</td>
 									<td>{{$pendingTicket->client}}</td>
-									<td>{{$pendingTicket->location}}</td>
+								
 								</tr>
 							@endforeach
 							</tbody>	
@@ -80,13 +79,13 @@
 				<div class="card my-5 closed-tickets" id="closed-tickets">
 					<div class="card-header text-center">Closed Tickets</div>
 					<div class="card-body">
-						<table class="table table-striped">
+						<table class="table table-striped border">
 							<thead>
 								<tr>
 								<td>id</td>
 								<td> Title</td>
-								<td>Bank Name</td>
-								<td>Branch Name</td>
+								<td>Bank</td>
+						
 								</tr>
 							</thead>
 							<tbody>
@@ -95,7 +94,7 @@
 									<td>{{$closedTicket->id}}</td>
 									<td>{{$closedTicket->title}}</td>
 									<td>{{$closedTicket->client}}</td>
-									<td>{{$closedTicket->location}}</td>
+								
 								</tr>
 							@endforeach
 							</tbody>
