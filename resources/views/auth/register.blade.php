@@ -66,7 +66,7 @@
                          <div class="col-md-6">
                                 <select type='text' class="form-control" name="organisation">
                                     <option value="Stanbicbank">Stanbic Bank</option>
-                                    <option value="DFCUBank"></option>
+                                    <option value="DFCUBank">DFCU</option>
                                     <option value="ADC">ADC</option>
 
                                 </select>
