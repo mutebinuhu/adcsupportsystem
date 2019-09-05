@@ -10,7 +10,7 @@ class StanbicBankController extends Controller
     //
         public function index()
     {	
-    	/*$countTickets =  DB::table('tickets')
+    	$countTickets =  DB::table('tickets')
     					  ->where('client', '=', 'stanbicbank')
     					  ->get();
     	$totalTickets = count($countTickets);//counts the total number of tickets
@@ -32,13 +32,13 @@ class StanbicBankController extends Controller
     	$stanbicTickets = DB::table('tickets')//returns all tickets for stanbic
     					  ->where('client', '=', 'stanbicbank')
     					  ->orderBy('id', 'desc')
-    					  ->paginate(5);*/
-    	return view('STANBIC.index');
-    				/*->withstanbicTickets($stanbicTickets)
+    					  ->paginate(5);
+    	return view('STANBIC.index')
+    				->withstanbicTickets($stanbicTickets)
     				->withtotalTickets($totalTickets)
     				->withtotalBrancVisits($totalBrancVisits)
     				->withcountPendingTickets($countPendingTickets)
-    				->withclosedTickets($closedTickets);*/
+    				->withclosedTickets($closedTickets);
 
 
 

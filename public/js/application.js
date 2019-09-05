@@ -51,4 +51,5 @@ $(document).ready(function (){
 	//ticket blade scripts
 	$('.ticket-nav').delay(1000).fadeIn(2000);
 	//end ticket scripts
+	$('.home-button').show(2000);
 })

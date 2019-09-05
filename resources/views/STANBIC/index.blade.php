@@ -7,10 +7,10 @@
 									<div class="bank-admin-image">	</div>	
 							</div>
 							<div class="bank-admin-info ">
-									<h5>Bank Tickets <sup><span class="text-right badge badge-info"><?php //{{$totalTickets}}  ?></span></h5></sup>
-									<h5>Bank Visits <sup><span class="text-right badge badge-primary"><?php //{{$totalBrancVisits}}  ?></span></h5></sup>
-									<h5>Pending Tickets <sup><span class="text-right badge badge-danger"><?php //{{$countPendingTickets}}  ?></span></h5></sup>
-									<h5>closed Tickets <sup><span class="text-right badge badge-success"><?php //{{$closedTickets}}  ?></span></h5></sup>
+									<h5>Bank Tickets <sup><span class="text-right badge badge-info"> {{$totalTickets}}</span></h5></sup>
+									<h5>Bank Visits <sup><span class="text-right badge badge-primary"> {{$totalBrancVisits}} </span></h5></sup>
+									<h5>Pending Tickets <sup><span class="text-right badge badge-danger"> {{$countPendingTickets}}</span></h5></sup>
+									<h5>closed Tickets <sup><span class="text-right badge badge-success">{{$closedTickets}}</span></h5></sup>
 							</div>
 					</div>	
 					<div class="col-md-9">
@@ -20,24 +20,23 @@
 											<table class="table">	
 													<thead>	
 															<tr>	
-																	<td>id</td>
-																	<td>Branch</td>
-																	<td>Title</td>
+																	<td><strong>id</strong></td>
+																	<td><strong>Branch</strong></td>
+																	<td><strong>Title</strong></td>
 															</tr>
 
 													</thead>
 													<tbody>	
-															<?php ////@foreach($stanbicTickets as $tickets)  ?>
+															@foreach($stanbicTickets as $tickets) 
 															<tr>	
-																<td><?php // {{$tickets->id}} ?></td>
-																<td><?php //{{$tickets->location}} ?></td>		
-																<td><?php //{{$tickets->title}} ?></td>		
-																		
+																<td> {{$tickets->id}}</td>
+																<td>{{$tickets->location}}</td>		
+																<td>{{$tickets->title}}</td>					
 															</tr>
-															<?php //@endforeach  ?>
+														@endforeach
 													</tbody>
 											</table>
-											<?php ////{{$stanbicTickets->links()}} ?>
+											{{$stanbicTickets->links()}}
 
 									</div>
 							</div>	
