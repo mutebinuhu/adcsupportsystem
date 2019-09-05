@@ -5,7 +5,7 @@ use Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\User;
-use App\fieldreport;
+use App\Fieldreport;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Mail;
 
@@ -76,7 +76,7 @@ class fieldDataController extends Controller
 
     public function show($url)
     {	
-    	$singledata = fieldreport::whereurl($url)->firstOrFail();
+    	$singledata = Fieldreport::whereurl($url)->firstOrFail();
     	return view('ADC.show')
     				->withsingledata($singledata);
     }
