@@ -20,7 +20,7 @@
                         <a href="{{url('adc')}}" class="btn btn-default btn-lg border home-button ">ADC</a>
                     </div>
                      <div class="text-center my-5">
-                        <a  href="{{url('tickets')}}" class="btn btn-default btn-lg border home-button ">TICKET</a>
+                        <a  href="{{url('tickets')}}" class="btn btn-default btn-lg border home-button ">SEND TICKET</a>
                     </div>
 
 
