@@ -7,7 +7,7 @@
 				<div class="admin-nav">
 					<div class="admin-image text-center my-3" style=""></div>
 					<h3 class="text-center border-bottom">{{Auth::User()->name}}</h3>
-					<h3 class="admin-reports"><a href="{{ url('/users')}}">users</a><sup><span class="badge badge-danger">{{0}}</span></sup></h3>
+					<h3 class="admin-reports"><a href="{{ url('/users')}}">users</a><sup><span class="badge badge-danger"></span></sup></h3>
 				</div>
 			<!--end of admin-nav-->
 			</div>
