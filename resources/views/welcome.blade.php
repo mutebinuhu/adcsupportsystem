@@ -343,7 +343,7 @@
     $('.close-ticket-box').delay(2000).fadeIn(4000);
 
   })
-    
+    alert('system is still developed')
   </script>
     </body>
 </html>
